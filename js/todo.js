@@ -24,10 +24,10 @@ function paintToDo(Obj) {
   const itemSpan = document.createElement("span");
   itemSpan.innerText = Obj.text;
   const itemButton = document.createElement("button");
-  itemButton.innerText = "❌";
+  itemButton.innerHTML = "❌";
   itemButton.addEventListener("click", deleteToDo);
-  item.appendChild(itemSpan);
   item.appendChild(itemButton);
+  item.appendChild(itemSpan);
   toDoList.appendChild(item);
 }
 
